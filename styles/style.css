@@ -1,0 +1,55 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(209, 199, 185);
+    margin: 1em 4em;
+}
+
+h1 {
+    padding-top: 1em;
+}
+
+h2 {
+    padding-top: 0.5em;
+}
+
+h1, h2 {
+    color: rgb(44, 17, 6);
+}
+
+.link-btn {
+    color: rgb(44, 17, 6);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+    border: 0.3em solid rgb(44, 17, 6);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.link-btn:hover {
+    color: white;
+    background-color: rgb(44, 17, 6);
+    transition: 0.2s;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+
+.menu-list li {
+    padding: 0.1em;
+    font-size: 1.3rem;
+}
+
+.menu-list li:hover {
+    font-weight: bold;
+}
+
+.menu-list a {
+    color:rgb(44, 17, 6);
+    text-decoration: none;
+}
