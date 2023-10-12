@@ -1,10 +1,47 @@
-* {
+/*
+Color scheme:
+    light:  #F9FAF9
+    dark:   #4A6163
+    peach:  #F9A663
+    yellow: #FFC94B
+    pink:   #F19A7E
+*/
+
+*, *::before, *::after {
     font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: rgb(209, 199, 185);
-    margin: 1em 4em;
+    background-color: #F9FAF9;
+    min-height: 100vh;
+}
+header, footer {
+    background-color: #4A6163;
+    color: #F9FAF9;
+}
+
+header, footer, main {
+    padding: 1rem 3rem;
+}
+
+header {
+    height: 7rem;
+}
+
+main {
+    min-height: calc(100vh - 7rem - 10rem);
+}
+footer{
+    text-align: center;
+    height: 10rem;
+}
+
+header h1 {
+    color: #F19A7E;
+    padding-top: 0.3em;
 }
 
 h1 {
@@ -15,24 +52,25 @@ h2 {
     padding-top: 0.5em;
 }
 
-h1, h2 {
-    color: rgb(44, 17, 6);
+h1, h2, h3 {
+    color: #4A6163;
 }
 
 .link-btn {
-    color: rgb(44, 17, 6);
+    color: #4A6163;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
     display: inline-block;
-    border: 0.3em solid rgb(44, 17, 6);
+    border: 0.3em solid #4A6163;
     border-radius: 1em;
     padding: 0.5em;
+    margin: 1em;
 }
 
 .link-btn:hover {
     color: white;
-    background-color: rgb(44, 17, 6);
+    background-color: #4A6163;
     transition: 0.2s;
 }
 
@@ -43,13 +81,42 @@ ul, ol {
 .menu-list li {
     padding: 0.1em;
     font-size: 1.3rem;
+    list-style: none;
 }
 
-.menu-list li:hover {
+.menu-list li a:hover,
+.menu-list li a:focus {
     font-weight: bold;
 }
 
 .menu-list a {
-    color:rgb(44, 17, 6);
+    display: inline-block;
+    color:#4A6163;
     text-decoration: none;
+    padding: 0.1em 1em;
+}
+
+.a-btn-light {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #FFC94B;
+    color: #4A6163;
+    text-decoration: none;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    text-transform: capitalize;
+    width: 13em;
+    border: 0.2em solid #FFC94B;
+    border-radius: 0.4em;
+}
+
+.a-btn-light:hover,
+.a-btn-light:focus {
+    background-color: inherit;
+    color: #FFC94B
+}
+
+.recipe {
+    padding: 2em 3em;
 }
